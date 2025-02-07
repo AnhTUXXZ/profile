@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header UPT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+
+swiper {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 10px;
+            gap: 20px;
+        }
+
+        .slider-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .text-content {
+            max-width: 50%;
+        }
+
+        .text-content h2 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .discount {
+            background: blue;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .register {
+            color: red;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .image-content img {
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Nút điều hướng */
+        .swiper-button-next, .swiper-button-prev {
+            color: #007bff;
+        }
+
+        /* Dấu chấm chỉ số */
+        .swiper-pagination-bullet {
+            background: #007bff;
+        }
+
+       
+        
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .button {
+            background-color: #1e5aff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover{
+            background-color: burlywood;
+            color: aqua;
+        }
+        .slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            white-space: nowrap;
+        }
+        .student-card {
+            display: inline-block;
+            background: #fff;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .student-card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        .nav-buttons button {
+            background-color: #1e5aff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <!-- Header trên cùng -->
+    <div class="top-bar d-flex justify-content-between align-items-center px-4 py-2 text-white">
+        <div class="d-flex align-items-center">
+            <i class="fas fa-phone-alt"></i> <span class="ms-2">0252 6521 808</span>
+            <i class="fas fa-envelope ms-4"></i> <span class="ms-2">khoa_cntt@upt.edu.vn</span>
+            <i class="far fa-clock ms-4"></i> <span class="ms-2">Mon - Sat: 07:30 - 17:00</span>
+        </div>
+        <div>
+            <span>Follow Us:</span> 
+            <a href="#" class="text-white ms-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white ms-3"><i class="fas fa-user"></i> Login / Register</a>
+        </div>
+    </div>
+
+    <!-- Thanh điều hướng -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.webp" alt="Logo" width="50">
+                <span class="ms-2 fw-bold">TRƯỜNG ĐẠI HỌC PHAN THIẾT <br> KHOA CÔNG NGHỆ THÔNG TIN</span>
+            </a>
+            
+            <!-- Nút mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">TRANG CHỦ</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="gioiThieu" role="button" data-bs-toggle="dropdown">GIỚI THIỆU</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tầm Nhìn & Sứ Mệnh</a></li>
+                            <li><a class="dropdown-item" href="#">Nhân Sự</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="daoTao" role="button" data-bs-toggle="dropdown">ĐÀO TẠO</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Chương Trình</a></li>
+                            <li><a class="dropdown-item" href="#">Lịch Học</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">TIN HOẠT ĐỘNG</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="gocSinhVien" role="button" data-bs-toggle="dropdown">GÓC SINH VIÊN</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Học Bổng</a></li>
+                            <li><a class="dropdown-item" href="#">Sự Kiện</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Nút liên hệ -->
+               
+                <a href="https://bom.so/fbtu" class="btn btn-primary">LIÊN HỆ →</a>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <div class="slider-content">
+                    <div class="text-content">
+                        <span class="discount">GIẢM 3.000.000 HỌC PHÍ</span>
+                        <span class="register">ĐĂNG KÝ VÀO TRƯỜNG</span>
+                        <h2>CHƯƠNG TRÌNH ĐÀO TẠO</h2>
+                        <p>Khoa CNTT chú trọng xây dựng chương trình đào tạo hiện đại, cập nhật các xu hướng mới như trí tuệ nhân tạo, blockchain và an ninh mạng...</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="sv1.jpg"> <label>
+                        <img src="logo.webp"> </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="slider-content">
+                    <div class="text-content">
+                        <span class="discount">GIẢM 5.000.000 HỌC PHÍ</span>
+                        <span class="register">ĐĂNG KÝ NGAY</span>
+                        <h2>CHƯƠNG TRÌNH KỸ SƯ CNTT</h2>
+                        <p>Chương trình đào tạo kỹ sư phần mềm hiện đại, giúp sinh viên có kỹ năng vững chắc về lập trình, bảo mật, AI...</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="logo.webp" alt="Hình ảnh 2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <div class="slider-content">
+                    <div class="text-content">
+                        <span class="discount">GIẢM 2.000.000 HỌC PHÍ</span>
+                        <span class="register">ĐĂNG KÝ NGAY</span>
+                        <h2>CHƯƠNG TRÌNH AI & DATA</h2>
+                        <p>Khóa học chuyên sâu về trí tuệ nhân tạo và dữ liệu lớn, giúp sinh viên nắm bắt công nghệ 4.0 và ứng dụng thực tế.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="logo.webp" alt="Hình ảnh 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nút điều hướng -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Dấu chấm chỉ số -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Thêm Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <div class="container">
+        <br><br>
+        <h2>SV TIÊU BIỂU</h2>
+        <a href="#" class="button">XEM CHI TIẾT →</a>
+        <div class="slider" id="slider">
+            <div class="student-card">
+                <img src="sv1.jpg" alt="">
+                <p>Nguyễn Anh Tú</p>
+                <p>K16THO0070</p>
+               
+                <a href="so1.html"  target="_blank" class="button">Check Thông Tin→</a>
+               
+
+            </div>
+            <div class="student-card">
+                <img src="logo.webp" alt="">
+                <p>.......2</p>
+                <p>K10TH00043</p>
+                <a href="#" class="button">XEM CHI TIẾT →</a>
+            </div>
+            <div class="student-card">
+                <img src="logo.webp" alt="">
+                <p>.......3</p>
+                <p>K10TH00004</p>
+                <a href="#" class="button">XEM CHI TIẾT →</a>
+            </div>
+            <div class="student-card">
+                <img src="logo.webp" alt="">
+                <p>.......4</p>
+                <p>K10TH00040</p>
+                <a href="#" class="button">XEM CHI TIẾT →</a>
+                
+            </div>
+        </div>
+        <div class="nav-buttons">
+            <button onclick="scrollLeft()">←</button>
+            <button onclick="scrollRight()">→</button>
+        </div>
+    </div>
+    <img src="logo2.png" width="500" height="500"> <label>
+       <br><br><br><br><br><br><br><br><br><br><br><br>
+       <h4 style="color: blue; text-align: center;">📚KHOA CÔNG NGHỆ THÔNG TIN</h4>
+       <br><br><br><br>
+        <h1 style="text-align: center;">NƠI CHẮP CÁNH NHỮNG ƯỚC MƠ CÔNG NGHỆ</h3>
+        <h3 style="text-align: center;">Khoa Công nghệ Thông tin là trái tim của những đổi mới sáng tạo,</h3>
+        <h3 style="text-align: center;">nơi hội tụ đam mê và khát khao làm chủ công nghệ. Với đội ngũ giảng </h3>
+        <h3 style="text-align: center;">viên giàu kinh nghiệm và môi trường học tập hiện đại, FIT UPT không chỉ truyền </h3>
+        <h3 style="text-align: center;">đạt kiến thức mà còn rèn luyện kỹ năng, thúc đẩy tư duy sáng tạo và bản lĩnh hội</h3>
+        <h3 style="text-align: center;">nhập. Đến với Khoa Công nghệ thông tin - Trường Đại học Phan Thiết, bạn sẽ không </h3>
+        <h3 style="text-align: center;">chỉ khám phá thế giới số mà còn tự mình tạo nên những kỳ tích, góp phần xây dựng </h3>
+        <h3 style="text-align: center;">tương lai bền vững trong kỷ nguyên công nghệ 4.0. Hãy cùng Khoa CNTT định hình và </h3>
+        <h3 style="text-align: center;">phát triển một hành trình không giới hạn!</h3></label>
+    <script>
+        function scrollLeft() {
+            document.getElementById('slider').scrollBy({ left: -200, behavior: 'smooth' });
+        }
+        function scrollRight() {
+            document.getElementById('slider').scrollBy({ left: 200, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
